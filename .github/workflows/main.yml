@@ -8,7 +8,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Setup Haxe
-        uses: krdlab/setup-haxe@master
+        uses: krdlab/setup-haxe@v1.2.0
         with:
           haxe-version: 4.2.5
 
@@ -33,7 +33,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Setup Haxe
-        uses: krdlab/setup-haxe@master
+        uses: krdlab/setup-haxe@v1.2.0
         with:
           haxe-version: 4.2.5
 
@@ -62,7 +62,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Setup Haxe
-        uses: krdlab/setup-haxe@master
+        uses: krdlab/setup-haxe@v1.2.0
         with:
           haxe-version: 4.2.5
 
@@ -93,7 +93,7 @@ jobs:
           java-version: '17'
 
       - name: Setup Haxe
-        uses: krdlab/setup-haxe@master
+        uses: krdlab/setup-haxe@v1.2.0
         with:
           haxe-version: 4.2.5
 
@@ -125,7 +125,7 @@ jobs:
         uses: actions/checkout@main
 
       - name: Setup Haxe
-        uses: krdlab/setup-haxe@master
+        uses: krdlab/setup-haxe@v1.2.0
         with:
           haxe-version: 4.2.5
 
