@@ -10,7 +10,7 @@
       "name": "linc_luajit",
       "type": "git",
       "ref": "main",
-      "url": "https://github.com/MobilePorting/linc_luajit-0.6.3.git"
+      "url": "https://github.com/mcaagabe19-stuff/linc_luajit-legacy.git"
     },
     {
       "name": "extension-androidtools",
