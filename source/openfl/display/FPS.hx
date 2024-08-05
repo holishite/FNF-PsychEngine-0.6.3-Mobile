@@ -99,11 +99,11 @@ class FPS extends TextField
 		if (currentCount != cacheCount /*&& visible*/)
 		{
 			text = "FPS: " + currentFPS;
-			var memoryMegas:Float = 0;
+			#if !cpp var memoryMegas:Float = 0; #end
 			
 			#if openfl
-			memoryMegas = Math.abs(FlxMath.roundDecimal(System.totalMemory / 1000000, 1));
-			text += "\nMemory: " + memoryMegas + " MB";
+			#if !cpp memoryMegas = Math.abs(FlxMath.roundDecimal(System.totalMemory / 1000000, 1)); #end
+			text += "\nMemory: " + #if cpp cpp.vm.Gc.memInfo64(cpp.vm.Gc.MEM_INFO_USAGE) #else memoryMegas #end + " MB";
 			#end
 
 			text += os;
